@@ -1,0 +1,12 @@
+name: Generate Report
+
+on:
+  workflow_run:
+    workflows: [build]
+    types: [completed]
+
+jobs:
+  runs-on: ubuntu-latest
+  report:
+    steps:
+      - run: echo "reporting..."
