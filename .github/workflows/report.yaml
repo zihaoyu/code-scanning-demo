@@ -6,7 +6,7 @@ on:
     types: [completed]
 
 jobs:
-  runs-on: ubuntu-latest
   report:
+    runs-on: ubuntu-latest
     steps:
       - run: echo "reporting..."
